@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.env
+.venv
+
+# IDE / Editor
+.vscode/
+.idea/
+.virtual_documents/
+
+# Project specific data and outputs
+data/
+outputs/
+results/
+anaconda_projects/
+
+# macOS
+.DS_Store

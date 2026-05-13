@@ -1,0 +1,43 @@
+# ══════════════════════════════════════════════════════════
+# KAGGLE PIPELINE CONFIG — chỉnh file này cho mỗi competition
+# ══════════════════════════════════════════════════════════
+
+competition:
+  name: "Irrigation-Need"        # tên folder trong /kaggle/input/
+  task: "multiclass"                  # binary | multiclass | regression
+  target_col: "Irrigation_Need"
+  id_col: "id"                    # null nếu không có
+
+paths:
+  train:  "data/raw/train.csv"
+  test:   "data/raw/test.csv"
+  sub:    "data/raw/sample_submission.csv"
+  output: "outputs/"
+
+cv:
+  n_folds: 5
+  seed: 42
+  strategy: "auto"                # auto | stratified | kfold | group
+  group_col: null                 # tên cột group nếu dùng GroupKFold
+
+metric: "balanced_accuracy"
+# binary:     auc | logloss | f1 | accuracy
+# multiclass: logloss | accuracy | f1_macro
+# regression: rmse | mae | rmsle | r2
+
+models:
+  lgbm:     true
+  xgb:      true
+  catboost: true
+
+tuning:
+  enabled: false
+  n_trials: 50
+
+ensemble:
+  blend_n_trials: 300
+
+notebook:
+  title: "My Kaggle Solution"
+  author: "your-kaggle-username"
+  output_path: "notebooks/solution.ipynb"

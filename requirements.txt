@@ -1,0 +1,32 @@
+# ══════════════════════════════════════════════════
+# requirements.txt — Irrigation Need Kaggle Pipeline
+# Cài đặt: pip install -r requirements.txt
+# ══════════════════════════════════════════════════
+
+# ── Core data processing ──────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+
+# ── Machine Learning ──────────────────────────────
+scikit-learn>=1.3.0
+
+# ── Gradient Boosting Models ──────────────────────
+lightgbm>=4.0.0
+xgboost>=2.0.0
+catboost>=1.2.0
+
+# ── Config & utilities ────────────────────────────
+pyyaml>=6.0           # đọc config.yaml
+
+# ── EDA / Notebook ────────────────────────────────
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
+
+# ── Visualization (EDA notebook) ─────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Optional: experiment tracking ────────────────
+# mlflow>=2.0.0       # bỏ comment nếu muốn dùng MLflow
+# optuna>=3.0.0       # bỏ comment nếu bật tuning trong config
