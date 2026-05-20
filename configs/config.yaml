@@ -22,13 +22,14 @@ cv:
 
 metric: "balanced_accuracy"
 # binary:     auc | logloss | f1 | accuracy
-# multiclass: logloss | accuracy | f1_macro
+# multiclass: logloss | accuracy | f1_macro | balanced_accuracy
 # regression: rmse | mae | rmsle | r2
 
 models:
   lgbm:     true
   xgb:      true
   catboost: true
+  rf:       true
 
 tuning:
   enabled: false

@@ -27,6 +27,9 @@ ipykernel>=6.0.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
+# ── SHAP Analysis ────────────────────────────────
+shap>=0.43.0
+
 # ── Optional: experiment tracking ────────────────
 # mlflow>=2.0.0       # bỏ comment nếu muốn dùng MLflow
 # optuna>=3.0.0       # bỏ comment nếu bật tuning trong config

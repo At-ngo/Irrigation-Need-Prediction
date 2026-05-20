@@ -25,5 +25,8 @@ outputs/
 results/
 anaconda_projects/
 
+# CatBoost cache
+catboost_info/
+
 # macOS
 .DS_Store
