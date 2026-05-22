@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 🌱 Irrigation Need Prediction
 
@@ -378,4 +378,3 @@ Pipeline thiết kế để **plug-and-play** cho các Kaggle competitions khác
 **Made with ❤️ for Kaggle Playground Series**
 
 </div>
-]]>
